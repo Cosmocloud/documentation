@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Singing Up and Logging In
+# Signing Up and Logging In
 
 ## Signing Up
 
