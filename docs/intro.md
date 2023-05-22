@@ -2,19 +2,8 @@
 sidebar_position: 1
 ---
 
-# Intro
+# Introduction
 
-Let's discover **Cosmocloud in less than 5 minutes**.
+Cosmocloud is a full featured, no-code, Backend-as-a-Service platform where you can practically build any custom logic.
 
-## Getting Started
-
-Get started by **[creating a new project](http://localhost:3000/docs/intro)**.
-
-Or **try Cosmocloud immediately** with **[cosmocloud.io](https://dashboard.cosmocloud.io/)**.
-
-### What you'll need
-
-- Account on [cosmocloud.io](https://dashboard.cosmocloud.io/)
-- Account on MongoDB Atlas
-- MongoDB Atlas URI
-- JWK URI (optional)
+> Currently, Cosmocloud is in closed beta phase, you can [reach out to us](https://cosmocloud.io/contact-us) to get exclusive access to our Beta platform.
