@@ -7,11 +7,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Cosmocloud",
-  tagline: "Start turning your ideas into reality.",
+  tagline: "Build your application's backend in minutes",
   favicon: "img/favicon.png",
 
   // Set the production url of your site here
-  url: "https://dashboard.cosmocloud.io/",
+  url: "https://cosmocloud.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",

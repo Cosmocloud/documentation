@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Setting up a Database
+# Spin up your Database
 
 One you're in the dashboard of your project you can get started with spinning up a database. To do this, you'll need to click on the "Database" tab in the sidebar. This will take you to the databases page.
 
