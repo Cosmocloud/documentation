@@ -8,7 +8,7 @@ Now that we have our database and model setup we can create our first API! To do
 
 ![APIs](/images/apis.png)
 
-Here we can create our first API. To do this, we need to click on the "New API" button. This will open a popup. In this popup, we have two options to select, either create a new API from scratch or create a new API from a template. For this tutorial, we'll be creating a new API from templates. So we'll need to select the "Browse templates" option. 
+Here we can create our first API. To do this, we need to click on the "New API" button. This will open a popup. In this popup, we have two options to select, either create a new API from scratch or create a new API from a template. For this tutorial, we'll be creating a new API from templates. So we'll need to select the "Browse templates" option.
 Once we've done this, we'll need to select a template from the options as we can see below.
 
 ![APIs](/images/api-templates.png)
@@ -22,5 +22,3 @@ Here we can review the API we're about to create. Once we've reviewed the API, w
 ![APIs](/images/apis-updated.png)
 
 We can see all of our created APIs as draft by default. We can add more APIs or edit the existing ones. Once we're done, we can go to deployments section.
-
-[Learn more about different types of APIs](/docs/Extras/api)
