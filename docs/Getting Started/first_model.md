@@ -9,8 +9,6 @@ Once you have successfully configured your project, lets start by creating a few
 1. Click on the `Create First Model` item from your Dashboard.
 2. Traversing to `Application layer -> Models` from the left side menu.
 
-# To change
-
 To create a new model -
 
 - Click on `Create` button on the Models page.
