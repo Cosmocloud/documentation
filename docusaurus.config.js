@@ -87,7 +87,22 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `Cosmocloud Private Limited`,
+        copyright: `&copy; Cosmocloud Private Limited`,
+        links: [
+          {
+            title: "Social Links",
+            items: [
+              {
+                label: "Linkedin",
+                href: "https://linkedin.com/company/cosmocloud",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/TeamCosmocloud",
+              },
+            ],
+          },
+        ],
       },
       prism: {
         theme: lightCodeTheme,
