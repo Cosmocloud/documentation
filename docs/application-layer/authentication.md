@@ -1,5 +1,5 @@
 # Authentication
-Cosmocloud comes with built-in authentication module that is a Production Grade authentication. We let you integrate with any 3rd Party SSO / Auth Provider such as AWS Cognito, Auth0, Google Identity, Okta, etc, anything that works on OAuth and JWT Tokens.
+Cosmocloud comes with **built-in** authentication module that is a Production Grade authentication system. We let you integrate with any 3rd Party SSO / Auth Provider such as AWS Cognito, Auth0, Google Identity, Okta, etc, anything that works on **OAuth** and **JWT Tokens**.
 
 ## Setup Authentication
 

@@ -4,6 +4,7 @@ theme:
   name: material
   icon:
     logo: material/file-document-outline
+  favicon: assets/favicon.png
   font:
     text: Ubuntu
   features:
@@ -58,8 +59,27 @@ copyright: >
   Cosmocloud Private Limited –
   <a href="#__consent">Change cookie settings</a>
 
-# nav:
-#   - Home: index.md
-#   - 'Getting Started':
-#     - 'Account Setup': getting-started/account-setup/index.md
-#     - 'First Project': getting-started/account-setup/first-project.md
+nav:
+  - 'Home': 'index.md'
+  - 'Getting Started':
+    - 'Account Setup': 
+      - 'getting-started/account-setup/index.md'
+      - 'Your First Project': 'getting-started/account-setup/first-project.md'
+      - 'Database Setup': 'getting-started/account-setup/database-setup.md'
+  - 'Application Layer':
+    - 'Building APIs':
+      - 'Your First API': 'application-layer/apis/first-api.md'
+      - 'Writing Conditions': 'application-layer/apis/conditions.md'
+      - 'Writing Expressions': 'application-layer/apis/expressions.md'
+    - 'Models':
+      - 'Model Types':
+        - 'application-layer/models/index.md'
+        - 'Database Collection Models': 'application-layer/models/database-collections.md'
+        - 'Request Body Models': 'application-layer/models/request-bodies.md'
+        - 'Query Param Models': 'application-layer/models/query-params.md'
+      - 'Defining Model Schema': 'application-layer/models/defining-schema.md'
+        
+    - 'Adding Authentication': 'application-layer/authentication.md'
+    - 'Full Text Search':
+      - 'application-layer/full-text-search/index.md'
+  - 'Help & Support': 'https://github.com/CosmoCloud/Bugs-and-Feedback'
