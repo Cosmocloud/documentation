@@ -80,6 +80,7 @@ nav:
           - "Defining Model Schema": "application-layer/models/defining-schema.md"
       - "Environments":
           - "Introduction": "application-layer/environments/introduction.md"
+          - "Types of Environments": "application-layer/environments/types-of-env.md"
           - "Creating Environments": "application-layer/environments/create-environment.md"
 
       - "Adding Authentication": "application-layer/authentication.md"

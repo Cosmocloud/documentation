@@ -1,22 +1,6 @@
 # Creating Environments
 
-In our application, we have a feature called `Environments` that allows you to organize your work and collaborate efficiently. You start with a default `Production` environment, and you can create more environments to suit your needs! Let's see what each environment offers:
-
-### Production Environment
-
-This is the main stage for your project where your final and polished app resides.It has dedicated resources and cannot be shared with any other environment to maintain the highest level of performance,security and reliability.
-
-### Staging Environment
-
-This environment is to test your application before sending the application to production. Just like the `Production` environment, it also has dedicated resources by default and are not shareable with others, ensuring privacy during testing and development.
-
-### Development Environment
-
-The `Development` environment is the stage for experimenting and trying out new features. You can share this environment with your team, making it easy to collaborate and work together. It also provide feature to share resources with other environments depending on your specific needs.
-
-### Custom Environment
-
-The `Custom` environment is versatile and fully customizable to the liking of user. Unlike the other environments, you can create as many `Custom` environments as you want. You also have the option to share this environment with others or keep it dedicated, depending on your specific needs.
+**Environments** allows you to organize your work and collaborate efficiently. You start with a default `Production` environment, and you can create more environments to suit your needs! Let's see what each environment offers:
 
 # How to Create an Environment
 
