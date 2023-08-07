@@ -81,6 +81,8 @@ nav:
       - "Environments":
           - "Introduction": "application-layer/environments/introduction.md"
           - "Creating Environments": "application-layer/environments/create-environment.md"
+          - "Updating Environments": "application-layer/environments/update-environment.md"
+          - "Delete Environments": "application-layer/environments/delete-environment.md"
 
       - "Adding Authentication": "application-layer/authentication.md"
       - "Full Text Search":
