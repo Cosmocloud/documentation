@@ -8,11 +8,13 @@ With our `Environments` feature, changing configurations can be done with just a
 
 ### Select the Environment to Update
 
-- Find the environment you want to update in the list and click on it. This will redirect you to the `Environment Details` page specific to that environment.
+- Find the environment you want to update in the list and click on it's name. This will redirect you to the `Environment Details` page specific to that environment.
 
 ### Explore the Editable Sections
 
-- On the `Environment Details` page, you will see various sections relevant to the selected environment. Some sections will be editable, while others are read-only.
+- Within the `Environment Details` page, you'll discover information about the currently chosen environment. Certain aspects of this information can be modified, granting you the ability to make changes. Upon completing your edits, ensure to select the "Save" button to preserve the revised updates..
+  
+![Editable Section](/assets/environment/UpdateEnv.png)
 
 ### Make Your Changes
 
@@ -26,3 +28,5 @@ Depending on the environment type, you'll have different editable options. For e
 - Once you've made the desired changes, click on the `Save` button at the top-right of the page.
 - You will see an acknowledgement message once the changes have been saved.
 - The environment is now updated with the new settings.
+
+![Save Editable Section](/assets/environment/SaveUpdateEnv.png)

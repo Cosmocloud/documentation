@@ -10,6 +10,8 @@
 4. For `Production` and `Staging,` the resources are automatically set to `Dedicated` for optimal performance.
 5. For `Development` and `Custom,` you can specify whether you want dedicated resources or sharing with other environments.
 
+<iframe src="https://drive.google.com/file/d/10LUdcScgiWxfgmC9zmDblt-2VOB2DNBv/preview" width="720" height="410" allow="autoplay"></iframe>
+
 !!! info "Info"
 
     `Production`,`Staging` and `Development` environments can only be created once. For creating multiple environmets select `Custom` environment instead.
