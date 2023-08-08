@@ -6,6 +6,10 @@ In our application, we have a feature called `Environments` that allows you to o
 
 This is the main stage for your project where your final and polished app resides.It has dedicated resources and cannot be shared with any other environment to maintain the highest level of performance,security and reliability.
 
+!!! warning "Warning"
+
+    `production cannot be deleted or created. It is automatically created and deleted with the project itself. You can only update and scale the Production environment.
+
 ### Staging Environment
 
 This environment is to test your application before sending the application to production. Just like the `Production` environment, it also has dedicated resources by default and are not shareable with others, ensuring privacy during testing and development.
@@ -25,6 +29,8 @@ The `Custom` environment is versatile and fully customizable to the liking of us
 3. If you select `Custom,` you can give it a unique name and set its sharing options.
 4. For `Production` and `Staging,` the resources are automatically set to `Dedicated` for optimal performance.
 5. For `Development` and `Custom,` you can specify whether you want dedicated resources or sharing with other environments.
+
+<iframe src="https://drive.google.com/file/d/10LUdcScgiWxfgmC9zmDblt-2VOB2DNBv/preview" width="720" height="410" allow="autoplay"></iframe>
 
 !!! info "Info"
 

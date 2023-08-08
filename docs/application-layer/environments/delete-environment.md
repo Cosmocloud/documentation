@@ -14,7 +14,9 @@ Deleting environments in our platform is a straightforward process,Here's how yo
 
 - Go ahead and click on the three dots icon next to the environment you want to delete. This will open up a menu with various options.
 - Among the options in the menu, you'll see "Delete." Click on it.
+  ![Three Dots Section](/assets/environment/threeDots.png)
 - You'll then be presented with a delete confirmation modal. This is your last chance to change your mind! Confirm that you really want to delete the environment.
+  ![Delete Modal Section](/assets/environment/DeleteEnvModal.png)
 - If you're absolutely sure about deleting the environment, click "Yes." Remember, once you do this, there's no turning back!
 
 ### Environment deleted
