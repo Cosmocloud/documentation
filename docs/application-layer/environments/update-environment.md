@@ -4,11 +4,11 @@ With our `Environments` feature, changing configurations can be done with just a
 
 ### Navigate to the Environment Listing Page
 
-- From the main dashboard, click on the `Environments` section. You'll see a list of all your environments, including `Production,` `Staging,` `Development,` and any custom environments that you have created.
+- From the main dashboard, click on the `Environments` section. You'll see a list of all your environments, including `Production,` `Staging,` `Development,` and any `Custom` environments that you have created.
 
 ### Select the Environment to Update
 
-- Find the environment you want to update in the list and click on it's name. This will redirect you to the `Environment Details` page specific to that environment.
+- Find the environment you want to update in the list and click on it's name. This will redirect you to the `Environment Details` page of that environment. 
 
 ### Explore the Editable Sections
 
@@ -20,8 +20,8 @@ With our `Environments` feature, changing configurations can be done with just a
 
 Depending on the environment type, you'll have different editable options. For example:
 
-- In the `Production` and `Staging` environments, you can adjust tier settings but cannot adjust resource allocations.
-- In the `Development` and `Custom` environments, you can adjust tier settings and sharing preferences.
+- In the `Production` and `Staging` environments, you can only update the **Tier**.
+- In the `Development` and `Custom` environments, you can update both **Tier** and **Resource type**.
 
 ### Click on Save
 

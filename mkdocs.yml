@@ -83,7 +83,7 @@ nav:
           - "Types of Environments": "application-layer/environments/types-of-env.md"
           - "Creating Environments": "application-layer/environments/create-environment.md"
           - "Updating Environments": "application-layer/environments/update-environment.md"
-          - "Delete Environments": "application-layer/environments/delete-environment.md"
+          - "Deactivate/Reactivate Environments": "application-layer/environments/delete-environment.md"
 
       - "Adding Authentication": "application-layer/authentication.md"
       - "Full Text Search":

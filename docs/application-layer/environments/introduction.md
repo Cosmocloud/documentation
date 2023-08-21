@@ -4,7 +4,7 @@
 
 ### What is an Environment?
 
-An environment is a self-contained individually scaled space where users can deploy and test their applications independently of each other. This feature is especially useful for managing development, staging, and production environments.
+An environment is a self-contained individually scaled space where users can deploy and test their applications independent of each other. This feature is especially useful for managing development, staging, production and custom environments.
 
 ### Available Environments Types
 
@@ -12,3 +12,4 @@ An environment is a self-contained individually scaled space where users can dep
 - Staging
 - Development
 - Custom
+ 
