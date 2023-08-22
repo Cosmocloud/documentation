@@ -16,7 +16,7 @@ theme:
     - navigation.indexes
     - toc.follow
     - navigation.top
-  palette: 
+  palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -47,7 +47,7 @@ markdown_extensions:
 extra:
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -60,26 +60,32 @@ copyright: >
   <a href="#__consent">Change cookie settings</a>
 
 nav:
-  - 'Home': 'index.md'
-  - 'Getting Started':
-    - 'Account Setup': 
-      - 'getting-started/account-setup/index.md'
-      - 'Your First Project': 'getting-started/account-setup/first-project.md'
-      - 'Database Setup': 'getting-started/account-setup/database-setup.md'
-  - 'Application Layer':
-    - 'Building APIs':
-      - 'Your First API': 'application-layer/apis/first-api.md'
-      - 'Writing Conditions': 'application-layer/apis/conditions.md'
-      - 'Writing Expressions': 'application-layer/apis/expressions.md'
-    - 'Models':
-      - 'Model Types':
-        - 'application-layer/models/index.md'
-        - 'Database Collection Models': 'application-layer/models/database-collections.md'
-        - 'Request Body Models': 'application-layer/models/request-bodies.md'
-        - 'Query Param Models': 'application-layer/models/query-params.md'
-      - 'Defining Model Schema': 'application-layer/models/defining-schema.md'
-        
-    - 'Adding Authentication': 'application-layer/authentication.md'
-    - 'Full Text Search':
-      - 'application-layer/full-text-search/index.md'
-  - 'Help & Support': 'https://github.com/CosmoCloud/Bugs-and-Feedback'
+  - "Home": "index.md"
+  - "Getting Started":
+      - "Account Setup":
+          - "getting-started/account-setup/index.md"
+          - "Your First Project": "getting-started/account-setup/first-project.md"
+          - "Database Setup": "getting-started/account-setup/database-setup.md"
+  - "Application Layer":
+      - "Building APIs":
+          - "Your First API": "application-layer/apis/first-api.md"
+          - "Writing Conditions": "application-layer/apis/conditions.md"
+          - "Writing Expressions": "application-layer/apis/expressions.md"
+      - "Models":
+          - "Model Types":
+              - "application-layer/models/index.md"
+              - "Database Collection Models": "application-layer/models/database-collections.md"
+              - "Request Body Models": "application-layer/models/request-bodies.md"
+              - "Query Param Models": "application-layer/models/query-params.md"
+          - "Defining Model Schema": "application-layer/models/defining-schema.md"
+      - "Environments":
+          - "Introduction": "application-layer/environments/introduction.md"
+          - "Types of Environments": "application-layer/environments/types-of-env.md"
+          - "Creating Environments": "application-layer/environments/create-environment.md"
+          - "Updating Environments": "application-layer/environments/update-environment.md"
+          - "Deactivate/Reactivate Environments": "application-layer/environments/delete-environment.md"
+
+      - "Adding Authentication": "application-layer/authentication.md"
+      - "Full Text Search":
+          - "application-layer/full-text-search/index.md"
+  - "Help & Support": "https://github.com/CosmoCloud/Bugs-and-Feedback"
