@@ -9,7 +9,7 @@ You can then customise and edit any API or model that is created via Templates.
 
 ### Available Templates
 - CRUD APIs
-- Search APIs (coming soon)
+- Search APIs
 - Media / Object upload (coming soon)
 
 ### Building from Scratch

@@ -72,6 +72,9 @@ nav:
   - "Application Layer":
       - "Building APIs":
           - "Your First API": "application-layer/apis/first-api.md"
+          - "Create from scratch": 
+            - "Creating a POST request": "application-layer/apis/create-post-api-from-scratch.md"
+            - "Creating a GET request": "application-layer/apis/create-get-api-from-scratch.md"
           - "Writing Conditions": "application-layer/apis/conditions.md"
           - "Writing Expressions": "application-layer/apis/expressions.md"
       - "Models":
