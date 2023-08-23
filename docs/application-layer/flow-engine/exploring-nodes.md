@@ -38,7 +38,7 @@ The "Custom Query Records" node empowers you to define and execute tailored quer
 
 #### Delete Records
 
-The "Delete Records" node facilitates the removal of specified records from a data source within your API flow, enabling data management and ensuring accurate data maintenance as part of your workflow.
+The "Delete Records" node facilitates the removal of specified record from a data source within your API flow, enabling data management and ensuring accurate data maintenance as part of your workflow.
 
 #### Delete Multiple Records
 
