@@ -94,6 +94,9 @@ nav:
           - "Creating Secrets": "application-layer/secrets/create-secrets.md"
           - "Updating Secrets": "application-layer/secrets/update-secrets.md"
           - "Deleting Secrets": "application-layer/secrets/delete-secrets.md"
+      - "Releases":
+          - "Introduction": "application-layer/releases/introduction.md"
+          - "How to deploy": "application-layer/releases/how-to-deploy.md"
       - "Adding Authentication": "application-layer/authentication.md"
       - "Full Text Search":
           - "application-layer/full-text-search/index.md"
