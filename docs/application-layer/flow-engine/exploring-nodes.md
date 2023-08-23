@@ -62,7 +62,7 @@ The "List Records" node empowers you to retrieve a list of records from a data s
 
 #### Update Records
 
-The "Update Records" node enables you to modify existing data entries within a data source within your API flow. By utilizing this node, you can seamlessly integrate updates to specific records, enhancing data management and enabling efficient data maintenance as part of your workflow.
+The "Update Records" node enables you to modify existing data entry within a data source within your API flow. By utilizing this node, you can seamlessly integrate updates to specific records, enhancing data management and enabling efficient data maintenance as part of your workflow.
 
 #### Update Multiple Records
 
