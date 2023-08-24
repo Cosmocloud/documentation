@@ -45,11 +45,11 @@ This approach significantly improves search performance as it avoids the need to
 Indexing is a crucial step in full-text search that allows for efficient retrieval of information from a collection of documents. While the previous example provided a basic understanding of indexing by focusing on indexing the "name" attribute, it's important to note that there are various indexing techniques available, each with its strengths and considerations.
 
 The indexing process in full-text search is determined by the analyzer used. An analyzer is a component responsible for tokenizing the text, applying various transformations, and generating indexed terms.
-[How to Create a Search Index?]()
+[How to Create a Search Index?](/application-layer/full-text-search/create-search-index/)
 
 ## Processing data with Analyzers
 
 Analyzers in Atlas Search are composed of a tokenizer, which extracts tokens from the text, and filters that you define. These filters are applied to the tokens, enabling the creation of indexable terms that account for variations in punctuation, capitalization, filler words, and more.
 
 By configuring the analyzer for a specific field, you can define how the data is processed and transformed during the indexing process. This allows you to handle common challenges in full-text searches, such as case insensitivity, stop word removal, stemming, and more. The combination of tokenizer and filters in the analyzer ensures that the indexed terms accurately reflect the search requirements and provide relevant search results.
-[How to Create a Custom Analyzer?]()
+[How to Create a Custom Analyzer?](/application-layer/full-text-search/create-custom-analyzer/)

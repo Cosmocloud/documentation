@@ -85,8 +85,11 @@ nav:
               - "Query Param Models": "application-layer/models/query-params.md"
           - "Defining Model Schema": "application-layer/models/defining-schema.md"
       - "Adding Authentication": "application-layer/authentication.md"
-      - "Full Text Search":
+      - "Full Text Search": 
           - "application-layer/full-text-search/index.md"
+          - "Implement full-text search in your application": "application-layer/full-text-search/fts-implementation.md"
+          - "Creating a Search Index": "application-layer/full-text-search/create-search-index.md"
+          - "Creating a Custom Analyzer": "application-layer/full-text-search/create-custom-analyzer.md"
   - "Environments":
       - "Introduction": "application-layer/environments/introduction.md"
       - "Types of Environments": "application-layer/environments/types-of-env.md"
