@@ -72,9 +72,9 @@ nav:
   - "Application Layer":
       - "Building APIs":
           - "Your First API": "application-layer/apis/first-api.md"
-          - "Create from scratch": 
-            - "Creating a POST request": "application-layer/apis/create-post-api-from-scratch.md"
-            - "Creating a GET request": "application-layer/apis/create-get-api-from-scratch.md"
+          - "Create from scratch":
+              - "Creating a POST request": "application-layer/apis/create-post-api-from-scratch.md"
+              - "Creating a GET request": "application-layer/apis/create-get-api-from-scratch.md"
           - "Writing Conditions": "application-layer/apis/conditions.md"
           - "Writing Expressions": "application-layer/apis/expressions.md"
       - "Models":
@@ -85,7 +85,10 @@ nav:
               - "Query Param Models": "application-layer/models/query-params.md"
           - "Defining Model Schema": "application-layer/models/defining-schema.md"
       - "Adding Authentication": "application-layer/authentication.md"
-      - "Full Text Search": 
+      - "Releases":
+          - "Introduction": "application-layer/releases/introduction.md"
+          - "How to deploy": "application-layer/releases/how-to-deploy.md"
+      - "Full Text Search":
           - "application-layer/full-text-search/index.md"
           - "Implement full-text search in your application": "application-layer/full-text-search/fts-implementation.md"
           - "Creating a Search Index": "application-layer/full-text-search/create-search-index.md"
