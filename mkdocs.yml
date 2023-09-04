@@ -2,9 +2,8 @@ site_name: Cosmocloud Documentation
 
 theme:
   name: material
-  icon:
-    logo: material/file-document-outline
-  favicon: assets/favicon.png
+  logo: assets/logos/logo-icon.png
+  favicon: assets/logos/logo-icon-light.svg
   font:
     text: Ubuntu
   features:
@@ -20,8 +19,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: purple
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -29,8 +28,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: purple
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -64,12 +63,13 @@ copyright: >
 
 nav:
   - "Home": "index.md"
-  - "Getting Started":
-      - "Account Setup":
-          - "getting-started/account-setup/index.md"
-          - "Your First Project": "getting-started/account-setup/first-project.md"
-          - "Database Setup": "getting-started/account-setup/database-setup.md"
-  - "Building your Backend":
+
+  - "Documentation":
+      - "Getting Started":
+        - "Account Setup":
+            - "getting-started/account-setup/index.md"
+            - "Your First Project": "getting-started/account-setup/first-project.md"
+            - "Database Setup": "getting-started/account-setup/database-setup.md"
       - "Application Layer":
           - "Building APIs":
               - "Your First API": "application-layer/apis/first-api.md"

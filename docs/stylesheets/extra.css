@@ -1,23 +1,21 @@
 :root {
-  --body-bg-color: #161426;
-  --header-text-color: #ffffff;
-  --heading-color: #f5f5f5;
-  --header-bg-color: hsl(272, 76%, 53%);
-  --hover-link-color: hsl(272, 76%, 53%, 1);
+  --body-bg-color: #1b1f22;
+  --header-text-color: #f8f9fa;
+  --heading-color: #f8f9fa;
+  --light-header-color: #8A5DE9;
+  --header-bg-color: #7D4BE7;
+  --hover-link-color: #6228E2;
 
   /* mkdocs variables override */
   --md-primary-fg-color: var(--header-bg-color);
-  --md-primary-fg-color--dark: rgb(96, 226, 45);
   --md-primary-bg-color: var(--header-text-color);
-  --md-primary-bg-color--light: red;
-  --md-primary-bg-color--dark: rgb(96, 226, 45);
-
   --md-accent-fg-color: var(--hover-link-color);
+
 }
 
 /* dark theme overrides */
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: var(--body-bg-color);
   --md-default-fg-color--light: var(--heading-color);
+  --md-typeset-a-color: var(--light-header-color);
 }
-
