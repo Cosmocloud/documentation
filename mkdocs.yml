@@ -94,6 +94,9 @@ nav:
           - "Creating Environments": "application-layer/environments/create-environment.md"
           - "Updating Environments": "application-layer/environments/update-environment.md"
           - "Deactivate/Reactivate Environments": "application-layer/environments/delete-environment.md"
+      - "Flow-Engine":
+          - "Introduction": "application-layer/flow-engine/introduction.md"
+          - "Exploring Nodes": "application-layer/flow-engine/exploring-nodes.md"
       - "Secrets":
           - "Introduction": "application-layer/secrets/introduction.md"
           - "Types of Secrets": "application-layer/secrets/types-of-secrets.md"
