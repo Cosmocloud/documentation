@@ -1,0 +1,1847 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../../secrets/introduction/">
+      
+      
+      <link rel="icon" href="../../../assets/logos/logo-icon-light.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Exploring Nodes - Cosmocloud Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exploring-nodes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cosmocloud Documentation" class="md-header__button md-logo" aria-label="Cosmocloud Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logos/logo-icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cosmocloud Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exploring Nodes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Technical Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://github.com/CosmoCloud/Bugs-and-Feedback" class="md-tabs__link">
+        
+  
+    
+  
+  Help & Support
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cosmocloud Documentation" class="md-nav__button md-logo" aria-label="Cosmocloud Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logos/logo-icon.png" alt="logo">
+
+    </a>
+    Cosmocloud Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../getting-started/account-setup/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../apis/first-api/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Application Layer
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../environments/introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Environments
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Flow-Engine
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Flow-Engine
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Exploring Nodes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Exploring Nodes
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-node-in-flow-engine" class="md-nav__link">
+    What is a node in flow engine?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-nodes" class="md-nav__link">
+    Conditional Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    If Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-v2" class="md-nav__link">
+    If Else v2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-case" class="md-nav__link">
+    Switch Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-nodes" class="md-nav__link">
+    Database Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Database Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-query-records" class="md-nav__link">
+    Custom Query Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-records" class="md-nav__link">
+    Delete Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-multiple-records" class="md-nav__link">
+    Delete Multiple Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetch-records" class="md-nav__link">
+    Fetch Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert-record" class="md-nav__link">
+    Insert Record
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert-multiple-records" class="md-nav__link">
+    Insert Multiple Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-records" class="md-nav__link">
+    List Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-records" class="md-nav__link">
+    Update Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-multiple-records" class="md-nav__link">
+    Update Multiple Records
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-nodes" class="md-nav__link">
+    External Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="External Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-call" class="md-nav__link">
+    API Call
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loops-nodes" class="md-nav__link">
+    Loops Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    For Loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    While Loop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-nodes" class="md-nav__link">
+    Response Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-response" class="md-nav__link">
+    HTTP Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-nodes" class="md-nav__link">
+    Trigger Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigger Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-trigger" class="md-nav__link">
+    HTTP Trigger
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-nodes" class="md-nav__link">
+    Variables Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append-to-array" class="md-nav__link">
+    Append to Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contains" class="md-nav__link">
+    Contains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-array" class="md-nav__link">
+    Empty Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length-of-array" class="md-nav__link">
+    Length of Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-array" class="md-nav__link">
+    Reverse Array
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathematical" class="md-nav__link">
+    Mathematical
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-variable" class="md-nav__link">
+    Add Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-maths-expr" class="md-nav__link">
+    Complex Maths Expr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decrement-variable" class="md-nav__link">
+    Decrement Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-variable" class="md-nav__link">
+    Divide Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increment-variable" class="md-nav__link">
+    Increment Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiply-variable" class="md-nav__link">
+    Multiply Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtract-variable" class="md-nav__link">
+    Subtract Variable
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append-to-string" class="md-nav__link">
+    Append to String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concat-strings" class="md-nav__link">
+    Concat Strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-variable" class="md-nav__link">
+    Set Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slice-string" class="md-nav__link">
+    Slice String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-lower" class="md-nav__link">
+    To Lower
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-upper" class="md-nav__link">
+    To Upper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trim-string" class="md-nav__link">
+    Trim String
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-json" class="md-nav__link">
+    Merge JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-json-object" class="md-nav__link">
+    Build JSON Object
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../secrets/introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Secrets
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../full-text-search/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Full Text Search
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/CosmoCloud/Bugs-and-Feedback" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Help & Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-node-in-flow-engine" class="md-nav__link">
+    What is a node in flow engine?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-nodes" class="md-nav__link">
+    Conditional Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    If Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-v2" class="md-nav__link">
+    If Else v2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-case" class="md-nav__link">
+    Switch Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-nodes" class="md-nav__link">
+    Database Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Database Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-query-records" class="md-nav__link">
+    Custom Query Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-records" class="md-nav__link">
+    Delete Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-multiple-records" class="md-nav__link">
+    Delete Multiple Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetch-records" class="md-nav__link">
+    Fetch Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert-record" class="md-nav__link">
+    Insert Record
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insert-multiple-records" class="md-nav__link">
+    Insert Multiple Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-records" class="md-nav__link">
+    List Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-records" class="md-nav__link">
+    Update Records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-multiple-records" class="md-nav__link">
+    Update Multiple Records
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-nodes" class="md-nav__link">
+    External Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="External Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-call" class="md-nav__link">
+    API Call
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loops-nodes" class="md-nav__link">
+    Loops Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    For Loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    While Loop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-nodes" class="md-nav__link">
+    Response Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-response" class="md-nav__link">
+    HTTP Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-nodes" class="md-nav__link">
+    Trigger Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigger Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-trigger" class="md-nav__link">
+    HTTP Trigger
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-nodes" class="md-nav__link">
+    Variables Nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables Nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arrays" class="md-nav__link">
+    Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append-to-array" class="md-nav__link">
+    Append to Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contains" class="md-nav__link">
+    Contains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-array" class="md-nav__link">
+    Empty Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length-of-array" class="md-nav__link">
+    Length of Array
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse-array" class="md-nav__link">
+    Reverse Array
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathematical" class="md-nav__link">
+    Mathematical
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematical">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-variable" class="md-nav__link">
+    Add Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-maths-expr" class="md-nav__link">
+    Complex Maths Expr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decrement-variable" class="md-nav__link">
+    Decrement Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-variable" class="md-nav__link">
+    Divide Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increment-variable" class="md-nav__link">
+    Increment Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiply-variable" class="md-nav__link">
+    Multiply Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtract-variable" class="md-nav__link">
+    Subtract Variable
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append-to-string" class="md-nav__link">
+    Append to String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concat-strings" class="md-nav__link">
+    Concat Strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-variable" class="md-nav__link">
+    Set Variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slice-string" class="md-nav__link">
+    Slice String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-lower" class="md-nav__link">
+    To Lower
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-upper" class="md-nav__link">
+    To Upper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trim-string" class="md-nav__link">
+    Trim String
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
+  </a>
+  
+    <nav class="md-nav" aria-label="JSON">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-json" class="md-nav__link">
+    Merge JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-json-object" class="md-nav__link">
+    Build JSON Object
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="exploring-nodes">Exploring Nodes</h1>
+<h2 id="what-is-a-node-in-flow-engine">What is a node in flow engine?</h2>
+<p>Nodes are the fundamental building blocks that power the functionality and versatility of the Flow Engine. These nodes play a pivotal role in shaping the behaviour, logic, and outcomes of your API workflows.
+A Node represents an entity that can be connected to other nodes. A node has inputs and outputs, which are the connections between two or more nodes.</p>
+<p>The Flow Engine typically comprises seven distinct types of nodes, each serving a specific purpose and collectively enhancing the functionality of your workflow.</p>
+<ul>
+<li><a href="#conditional-nodes">Conditional Nodes</a></li>
+<li><a href="#database-nodes">Database Nodes</a></li>
+<li><a href="#external-nodes">External Nodes</a></li>
+<li><a href="#loops-nodes">Loops Nodes</a></li>
+<li><a href="#response-nodes">Response Nodes</a></li>
+<li><a href="#trigger-nodes">Storage Nodes</a></li>
+<li><a href="#trigger-nodes">Triggers Nodes</a></li>
+<li><a href="#variables-nodes">Variables Nodes</a></li>
+</ul>
+<h2 id="conditional-nodes">Conditional Nodes</h2>
+<h4 id="if-else">If Else</h4>
+<p>The "If Else" node empowers you to implement conditional logic within your API flow. It enables you to evaluate a condition and perform different actions based on whether the condition is true or false. This node enhances the flexibility of your workflow, allowing you to guide the flow of execution based on specific criteria or outcomes.</p>
+<h4 id="if-else-v2">If Else v2</h4>
+<p>The "If Else v2" node, offers a streamlined approach to conditional logic in your API flow. Unlike branching into separate flows, it allows you to evaluate a condition and make a choice that leads to the same destination. This simplifies workflow design by converging paths that eventually meet, optimizing the execution of your API flow while maintaining flexibility in decision-making.</p>
+<h4 id="switch-case">Switch Case</h4>
+<p>The "Switch Case" node empowers you to implement multi-way branching logic within your API flow. By utilizing this node, you can evaluate different conditions and direct the flow of execution based on specific cases, enhancing the flexibility and adaptability of your workflow to various scenarios.</p>
+<h2 id="database-nodes">Database Nodes</h2>
+<h4 id="custom-query-records">Custom Query Records</h4>
+<p>The "Custom Query Records" node empowers you to define and execute tailored queries for retrieving records within your API flow, enabling precise data extraction and customization according to your specific requirements.</p>
+<h4 id="delete-records">Delete Records</h4>
+<p>The "Delete Records" node facilitates the removal of specified record from a data source within your API flow, enabling data management and ensuring accurate data maintenance as part of your workflow.</p>
+<h4 id="delete-multiple-records">Delete Multiple Records</h4>
+<p>The "Delete Multiple Records" node empowers you to efficiently remove a set of designated records from a data source within your API flow, streamlining data management and enhancing bulk data deletion capabilities in your workflow.</p>
+<h4 id="fetch-records">Fetch Records</h4>
+<p>The "Fetch Record" node empowers you to retrieve specific records from a data source within your API flow, facilitating data extraction and integration for further processing or analysis as part of your workflow.</p>
+<h4 id="insert-record">Insert Record</h4>
+<p>The "Insert Record" node empowers you to add new data entries into a data source within your API flow. By utilizing this node, you can seamlessly integrate new information, enhancing data management and expanding your workflow's capabilities.</p>
+<h4 id="insert-multiple-records">Insert Multiple Records</h4>
+<p>The "Insert Multiple Records" node allows you to efficiently add multiple new data entries into a data source within your API flow. This streamlines the process of integrating multiple pieces of information, enhancing data management and enabling bulk data insertion as part of your workflow.</p>
+<h4 id="list-records">List Records</h4>
+<p>The "List Records" node empowers you to retrieve a list of records from a data source within your API flow. By utilizing this node, you can efficiently extract data, facilitating data analysis, processing, and integration as part of your workflow.</p>
+<h4 id="update-records">Update Records</h4>
+<p>The "Update Records" node enables you to modify existing data entry within a data source within your API flow. By utilizing this node, you can seamlessly integrate updates to specific records, enhancing data management and enabling efficient data maintenance as part of your workflow.</p>
+<h4 id="update-multiple-records">Update Multiple Records</h4>
+<p>The "Update Multiple Records" node empowers you to efficiently modify a set of designated data entries within a data source in your API flow. This node streamlines the process of updating multiple records simultaneously, enhancing data management and optimizing bulk data modification capabilities within your workflow.</p>
+<h2 id="external-nodes">External Nodes</h2>
+<h4 id="api-call">API Call</h4>
+<p>The "API Call" node allows you to easily connect with external APIs within your API flow, enabling smooth interactions and expanding the functionality of your workflow.</p>
+<h2 id="loops-nodes">Loops Nodes</h2>
+<h4 id="for-loop">For Loop</h4>
+<p>The "For Loop" node empowers you to iterate over a set of values or elements within your API flow, enabling you to perform repetitive actions, apply logic, and process data sequentially as part of your workflow.</p>
+<h4 id="while-loop">While Loop</h4>
+<p>The "While Loop" node empowers you to create a loop within your API flow that continues executing as long as a specified condition is met. By utilizing this node, you can repeatedly perform actions or processes, enhancing automation and enabling dynamic data-driven iterations within your workflow.</p>
+<h2 id="response-nodes">Response Nodes</h2>
+<h4 id="http-response">HTTP Response</h4>
+<p>The "HTTP Response" node allows you to define and send HTTP responses within your API flow, enabling you to communicate outcomes, status codes, and data back to clients or systems interacting with your API. This node is crucial for controlling the behaviour and feedback of your API endpoints.</p>
+<h2 id="trigger-nodes">Trigger Nodes</h2>
+<h4 id="http-trigger">HTTP Trigger</h4>
+<p>The "HTTP Trigger" node serves as a starting point for your API flow, enabling external systems to initiate the workflow by sending HTTP requests. This node allows you to define how your API responds when specific HTTP requests are received, facilitating seamless interaction between your API and external applications.</p>
+<h2 id="variables-nodes">Variables Nodes</h2>
+<h3 id="arrays">Arrays</h3>
+<h4 id="append-to-array">Append to Array</h4>
+<p>The "Append to Array" node facilitates the addition of new elements to an existing array within your API flow, enhancing data manipulation and enabling dynamic array expansion.</p>
+<h4 id="contains">Contains</h4>
+<p>The "Contains" node serves to determine whether a specific value is present within a given array, enhancing data analysis and enabling conditional logic within your API flow.</p>
+<h4 id="empty-array">Empty Array</h4>
+<p>The "Empty Array" node allows you to create an empty array within your API flow, providing a starting point for data collection and manipulation, and enabling efficient array-based operations as needed in your workflow.</p>
+<h4 id="length-of-array">Length of Array</h4>
+<p>The "Length of Array" node enables you to determine the number of elements within an array within your API flow. This functionality enhances your ability to assess and manage array data, facilitating dynamic data manipulation and informed decision-making within your workflow.</p>
+<h4 id="reverse-array">Reverse Array</h4>
+<p>The "Reverse Array" node empowers you to reverse the order of elements within an array within your API flow. This functionality enhances your ability to manipulate array data, enabling you to present data in a different sequence and facilitating dynamic data arrangement within your workflow.</p>
+<h3 id="mathematical">Mathematical</h3>
+<h4 id="add-variable">Add Variable</h4>
+<p>The "Add Variable" node optimizes API flows by enabling summation operations, enhancing computational capabilities, and improving workflow efficiency through calculated variables.</p>
+<h4 id="complex-maths-expr">Complex Maths Expr</h4>
+<p>The "Complex Math Expression" node empowers you to perform intricate mathematical calculations seamlessly within your API flow, enabling advanced computations and data transformations.</p>
+<h4 id="decrement-variable">Decrement Variable</h4>
+<p>The "Decrement Variable" node allows you to decrease the value of a variable within your API flow. By using this node, you can perform subtraction operations on the variable, facilitating dynamic data manipulation and enabling iterative calculations as part of your workflow.</p>
+<h4 id="divide-variable">Divide Variable</h4>
+<p>The "Divide Variable" node enables you to perform division operations on a variable within your API flow, facilitating numerical calculations and dynamic data transformations as part of your workflow.</p>
+<h4 id="increment-variable">Increment Variable</h4>
+<p>The "Increment Variable" node enables you to increase the value of a variable within your API flow. By utilizing this node, you can conduct addition operations on the variable, supporting dynamic data manipulation and iterative calculations within your workflow.</p>
+<h4 id="multiply-variable">Multiply Variable</h4>
+<p>The "Multiply Variable" node enables you to perform multiplication operations on a variable within your API flow. By utilizing this node, you can conduct numerical calculations and dynamic data transformations, enhancing your workflow's computational capabilities.</p>
+<h4 id="subtract-variable">Subtract Variable</h4>
+<p>The "Subtract Variable" node enables you to conduct subtraction operations on a variable within your API flow. By utilizing this node, you can perform numerical calculations and dynamic data transformations, enhancing your workflow's computational capabilities and supporting various data-driven scenarios.</p>
+<h3 id="strings">Strings</h3>
+<h4 id="append-to-string">Append to String</h4>
+<p>The "Append to String" node empowers you to dynamically extend a string within your API flow, enabling flexible content building and dynamic string concatenation.</p>
+<h4 id="concat-strings">Concat Strings</h4>
+<p>The "Concatenate Strings" node enables you to effortlessly combine multiple strings within your API flow, facilitating dynamic text creation and versatile content generation.</p>
+<h4 id="set-variable">Set Variable</h4>
+<p>The "Set Variable" node allows you to define and assign values to variables within your API flow. This node is essential for storing and managing data that can be used throughout the workflow, enhancing data manipulation and enabling dynamic value assignments in your workflow logic.</p>
+<h4 id="slice-string">Slice String</h4>
+<p>The "Slice String" node empowers you to extract a portion of a string within your API flow. By utilizing this node, you can manipulate string data, facilitating dynamic text extraction and enabling precise data manipulation within your workflow.</p>
+<h4 id="to-lower">To Lower</h4>
+<p>The "To Lower" node allows you to convert a string to lowercase within your API flow. By using this node, you can ensure uniformity in text formatting, facilitate data manipulation, and improve consistency in your workflow's textual data.</p>
+<h4 id="to-upper">To Upper</h4>
+<p>The "To Upper" node enables you to convert a string to uppercase within your API flow. By utilizing this node, you can ensure standardized text formatting, enhance data manipulation, and maintain consistent capitalization across your workflow's textual data.</p>
+<h4 id="trim-string">Trim String</h4>
+<p>The "Trim String" node empowers you to remove leading and trailing whitespace from a string within your API flow. By utilizing this node, you can enhance data cleanliness, facilitate accurate data processing, and ensure consistent formatting in your workflow's textual data.</p>
+<h3 id="json">JSON</h3>
+<h4 id="merge-json">Merge JSON</h4>
+<p>The "Merge JSON" node allows you to combine and unify multiple JSON objects within your API flow. By using this node, you can seamlessly integrate data from various sources, enhancing data consolidation and enabling comprehensive JSON manipulation as part of your workflow.</p>
+<h4 id="build-json-object">Build JSON Object</h4>
+<p>The "Build JSON Object" node allows you to construct and customize JSON data structures effortlessly within your API flow, enhancing data formatting and facilitating seamless integration with other systems.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Cosmocloud Private Limited – <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          Github
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

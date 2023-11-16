@@ -1,0 +1,21 @@
+:root {
+  --body-bg-color: #1b1f22;
+  --header-text-color: #f8f9fa;
+  --heading-color: #f8f9fa;
+  --light-header-color: #8A5DE9;
+  --header-bg-color: #7D4BE7;
+  --hover-link-color: #6228E2;
+
+  /* mkdocs variables override */
+  --md-primary-fg-color: var(--header-bg-color);
+  --md-primary-bg-color: var(--header-text-color);
+  --md-accent-fg-color: var(--hover-link-color);
+
+}
+
+/* dark theme overrides */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: var(--body-bg-color);
+  --md-default-fg-color--light: var(--heading-color);
+  --md-typeset-a-color: var(--light-header-color);
+}
