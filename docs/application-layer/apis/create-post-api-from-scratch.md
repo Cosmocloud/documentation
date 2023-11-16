@@ -55,7 +55,7 @@
 ## API Testing
 - To facilitate the functionality of your API, you need to establish a connection between your database and CosmoCloud.
 - Access the **Application Layer** through the project dashboard's sidebar and navigate to the **Secrets** section.
-- Here, add a Database secret by supplying all the required details. Learn how to create a [Database Secret](/docs/application-layer/secrets/create-secrets) here.
+- Here, add a Database secret by supplying all the required details. Learn how to create a [Database Secret](/application-layer/secrets/create-secrets) here.
 - Once the Database secret is successfully updated that signfies that your database has been connected.
 - Now, deploy the APIs along with their associated models. After deployment and it's activation, the APIs become operational.
 - With your API ready for use, proceed to the API Details page to copy the API endpoint for testing.

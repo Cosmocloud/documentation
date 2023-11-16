@@ -7,7 +7,7 @@ Cosmocloud comes with a built-in feature to add full-text search in your applica
 !!! info
     Cosmocloud Full Text Search is powered by MongoDb Atlas Search and hence, it requires MongoDb Atlas Configuration to implement full-text search in your application.
 
-    [Setup MongoDB Atlas Database Config](/docs/getting-started/account-setup/database-setup.md)
+    [Setup MongoDB Atlas Database Config](/getting-started/account-setup/database-setup.md)
 
 ## Adding Full-Text search in your application
 - In order to incorporate full-text search functionality in your application, you must create search indexes. These indexes serve as a unique definition for a database model, specifying which fields should be indexed and which analyzers should be used for processing those specific fields.
