@@ -22,7 +22,7 @@
 ## Constructing the API Workflow
 - As before, move to the **Flow** section within the API Details page.
 - The "HTTP Trigger" node is still relevant, capturing essential request data.
-- Construct the API workflow using the flow engine. Reference [this guide](/application-layer/flow-engine/exploring-nodes.md) for a comprehensive understanding.
+- Construct the API workflow using the flow engine. Reference [this guide](/application-layer/flow-engine/exploring-nodes) for a comprehensive understanding.
 - For our `GET` API, the workflow should encompass retrieving student data based on the specified query parameters.
 
 <!-- Todo add a video here -->
